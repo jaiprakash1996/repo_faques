@@ -13,7 +13,8 @@ int main()
         cin>>a[i];
     cout<<"enter elements to be searched :- ";
     cin>>key;
-    int beg=0,end=n,mid=(beg+end)/2;
+    int beg=0,end=n-1;
+    int mid=(beg+end)/2;
     while(beg<=end && a[mid]!=key){
         if(a[mid]<key)
             beg=mid;
